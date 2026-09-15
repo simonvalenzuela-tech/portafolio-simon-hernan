@@ -53,7 +53,7 @@ export default function PortafolioDevBridge() {
       name: "Hernán Alejandro Rolón",
       rol: "Técnico Superior en Programación",
       whatsapp: "5493513773391",
-      skills: ["Arquitectura Web", "Backend Systems", "APIs"],
+      skills: ["Python", "JavaScript", "Postgre SQL / My SQL / Supabase / Firebase", "Android Studio", "Node.js", "Docker"],
     },
   ];
 
@@ -70,16 +70,9 @@ export default function PortafolioDevBridge() {
             <Code2 size={22} />
           </div>
           <span className="text-xl font-black tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
-            DevBridge <span className="text-violet-400">Córdoba</span>
+            DevCraft <span className="text-violet-400">Studio</span>
           </span>
         </div>
-        
-        <a
-          href="#contacto"
-          className="hidden sm:inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white text-sm font-bold shadow-lg shadow-violet-600/30 hover:shadow-violet-500/50 hover:scale-[1.03] transition-all duration-300"
-        >
-          Hablemos <ArrowUpRight size={16} />
-        </a>
       </header>
 
       {/* Hero Section */}
@@ -87,18 +80,18 @@ export default function PortafolioDevBridge() {
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-violet-500/30 text-violet-300 text-xs font-semibold tracking-wide uppercase mb-8 shadow-inner">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
           <Sparkles size={14} className="text-violet-400" />
-          Desarrollo Web Profesional en Córdoba
+          SOLUCIONES IT & DESARROLLO DE SOFTWARE
         </div>
 
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-black leading-[1.08] tracking-tight text-white">
-          Tu negocio con una web que{" "}
+          Impulsamos tu empresa con software a medida{" "}
           <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-indigo-300 bg-clip-text text-transparent">
-            multiplica tus ventas.
+            y soluciones digitales de alto impacto.
           </span>
         </h1>
 
         <p className="mt-8 text-slate-400 text-lg md:text-xl max-w-[58ch] font-normal leading-relaxed">
-          Diseñamos y desarrollamos sitios web, catálogos online y sistemas a medida para comercios y servicios locales. Velocidad extrema, diseño prémium y enfoque 100% comercial.
+        Diseñamos y desarrollamos sistemas a medida, aplicaciones, automatizaciones de procesos y plataformas web para comercios y empresas. Tecnología escalable, rendimiento extremo y enfoque 100% en resultados.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
@@ -256,9 +249,9 @@ export default function PortafolioDevBridge() {
 
       {/* Footer */}
       <footer className="px-6 md:px-16 py-8 border-t border-slate-900 text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4 bg-slate-950">
-        <span className="font-semibold text-slate-400">DevBridge Córdoba © {new Date().getFullYear()}</span>
+        <span className="font-semibold text-slate-400">© DevCraft Studio {new Date().getFullYear()}</span>
         <span className="flex items-center gap-2">
-          <CheckCircle2 size={14} className="text-emerald-400" /> Sitios Ultra Rápida Performance
+          <CheckCircle2 size={14} className="text-emerald-400" /> Todos los derechos reservados
         </span>
       </footer>
     </div>
