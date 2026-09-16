@@ -20,7 +20,7 @@ export default function CafeLatente() {
         <Link href="/" className="inline-flex items-center gap-2 text-sm text-[#4a3a2c]/70 hover:text-[#2b1d14]">
           <ArrowLeft size={15} /> Volver al portafolio
         </Link>
-        <span className="font-serif text-xl font-semibold">Café Latente</span>
+        <span className="font-serif text-xl font-semibold">Balthazar Bakery</span>
         <nav className="hidden md:flex gap-8 text-sm">
           <a href="#menu" className="hover:opacity-70">Menú</a>
           <a href="#nosotros" className="hover:opacity-70">Nosotros</a>
@@ -49,8 +49,8 @@ export default function CafeLatente() {
         </div>
         <div className="aspect-[4/5] rounded-md relative overflow-hidden">
           <Image
-            src="https://i.pinimg.com/736x/37/b3/67/37b3672803c81f70e94aa6d8a25cb917.jpg"
-            alt="Café Latente"
+            src="https://newyorkspork.com/wp-content/uploads/2024/05/Balthazar-1006221.jpg"
+            alt="Balthazar Bakery"
             fill
             className="object-cover"
             priority
@@ -82,8 +82,8 @@ export default function CafeLatente() {
           {galeria.map((seed) => (
             <div key={seed} className="relative aspect-square rounded-md overflow-hidden">
               <Image
-                src="https://appetizer.com.ar/assets/uploads/restaurantes/35425-la-milkeria-portada.jpg"
-                alt="Café Latente — el local"
+                src="https://media.cntraveler.com/photos/61648be9ea8904e83ba2e77c/16:9/w_2560%2Cc_limit/Balthazar%2C%2520NYC_Michael_Grimm_In08.jpg"
+                alt="Balthazar Bakery — el local"
                 fill
                 className="object-cover"
               />
@@ -96,7 +96,7 @@ export default function CafeLatente() {
       <section id="nosotros" className="grid md:grid-cols-2 gap-10 items-center px-6 md:px-16 py-16 bg-[#2b1d14] text-[#f6ede1]">
         <div className="relative aspect-square rounded-md overflow-hidden">
           <Image
-            src="https://appetizer.com.ar/assets/uploads/restaurantes/d2bf0-la-milkeria-cuadradas.jpg"
+            src="http://localhost:3000/_next/image?url=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FQS6xQxdUo8zRKxRRv-JLF-fNlMQ%3D%2F0x0%3A4032x3024%2F2070x1553%2Ffilters%3Afocal(1694x1190%3A2338x1834)%3Ano_upscale()%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_image%2Fimage%2F62582949%2Fbalthazar_bakery_inside.0.0.jpg&w=1920&q=75"
             alt="Tueste de café"
             fill
             className="object-cover"
@@ -114,22 +114,34 @@ export default function CafeLatente() {
 
       {/* Visit */}
       <section id="visitanos" className="px-6 md:px-16 py-16 text-center">
-        <h2 className="font-serif text-3xl mb-2">Visitanos</h2>
-        <p className="text-[#6b5a48] mb-7 flex items-center justify-center gap-2">
-          <MapPin size={16} /> Bulevar Illia 450, Nueva Córdoba
-          <span className="mx-1">·</span>
-          <Clock size={16} /> Lun a sáb, 8 a 20 hs
-        </p>
-        <div className="max-w-2xl mx-auto aspect-[16/7] rounded-md bg-[#f0e6d6] relative" />
-      </section>
+  <h2 className="font-serif text-3xl mb-2">Visitanos</h2>
+  <p className="text-[#6b5a48] mb-7 flex items-center justify-center gap-2">
+    <MapPin size={16} /> 80 Spring St, New York, NY 10012
+    <span className="mx-1">·</span>
+    <Clock size={16} /> Lun a sáb, 8 a 20 hs
+  </p>
+  
+  <div className="max-w-2xl mx-auto aspect-[16/7] rounded-md overflow-hidden bg-[#f0e6d6] relative shadow-sm border border-[#e2d5c3]">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4735237375207!2d-73.9991206234255!3d40.72295623653135!2m3!1f0!f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598c4f039169%3A0x6b63d91cf3241b71!2s80%20Spring%20St%2C%20New%20York%2C%20NY%2010012%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1710000000000!5m2!1ses-419!2sar"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen={false}
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      className="w-full h-full border-0"
+    />
+  </div>
+</section>
 
       <a href="#" className="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-[#3a7d5c] text-white flex items-center justify-center shadow-lg">
         <MessageCircle size={24} />
       </a>
 
       <footer className="flex justify-between px-6 md:px-16 py-7 border-t border-[#2b1d14]/10 text-sm text-[#7a6a58]">
-        <span>Café Latente · Córdoba</span>
-        <span>Sitio de ejemplo — DevBridge</span>
+        <span>Balthazar Bakery</span>
+        <span>Sitio de ejemplo — DevCraft Studio</span>
       </footer>
     </div>
   );

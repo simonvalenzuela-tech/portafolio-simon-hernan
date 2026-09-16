@@ -6,21 +6,21 @@ export default function PortafolioDevBridge() {
   const proyectos = [
     {
       slug: "cafe",
-      name: "Café Latente",
+      name: "Balthazar Bakery",
       tag: "Landing de comercio",
       desc: "Cafetería con menú interactivo, ubicación en vivo y contacto directo por WhatsApp.",
       tone: "from-amber-500/20 via-orange-500/10 to-transparent",
       badgeColor: "border-amber-500/30 text-amber-400 bg-amber-500/10",
-      img: "https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?cs=srgb&dl=pexels-apgpotr-683039.jpg&fm=jpg",
+      img: "https://www.balthazarbakery.com/soho/content/home/landing_banner_01.jpg",
     },
     {
       slug: "indumentaria",
-      name: "NUDO",
+      name: "American Eagle",
       tag: "Catálogo online",
       desc: "Tienda de indumentaria con catálogo visual optimizado y pedidos rápidos por WhatsApp.",
       tone: "from-fuchsia-500/20 via-purple-500/10 to-transparent",
       badgeColor: "border-fuchsia-500/30 text-fuchsia-400 bg-fuchsia-500/10",
-      img: "https://tipsparatuviaje.com/wp-content/uploads/2018/10/topshop-tienda.jpg",
+      img: "https://ccviva.com/sites/default/files/2024-05/American_Eagle_Villavicencio.jpg",
     },
     {
       slug: "barberia",
@@ -33,12 +33,12 @@ export default function PortafolioDevBridge() {
     },
     {
       slug: "ferreteria",
-      name: "Ferretería Belgrano",
+      name: "The Home Depot",
       tag: "Gestión de stock",
       desc: "Panel de inventario en tiempo real con alertas automáticas de reposición.",
       tone: "from-emerald-500/20 via-teal-500/10 to-transparent",
       badgeColor: "border-emerald-500/30 text-emerald-400 bg-emerald-500/10",
-      img: "https://emprendedorlabs.com/wp-content/uploads/Como-Iniciar-un-Negocio-de-Ferreteria-sin-Sobreinvertir.jpg",
+      img: "https://d1xchyov513y0i.cloudfront.net/wp-content/uploads/2023/03/23162712/the-home-depot-PEMB-construction.jpg",
     },
   ];
 
@@ -47,7 +47,7 @@ export default function PortafolioDevBridge() {
       name: "Simón Valenzuela",
       rol: "Programador Full Stack",
       whatsapp: "5493515500620",
-      skills: ["React / Next.js", "Node.js", "JavaScript", "TypeScript", "Tailwind CSS"],
+      skills: ["React / Next.js", "Node.js", "JavaScript", "TypeScript", "Tailwind CSS", "ECMAScript", "Postgre SQL / MongoDB", "Testing"],
     },
     {
       name: "Hernán Alejandro Rolón",
@@ -137,6 +137,7 @@ export default function PortafolioDevBridge() {
                   src={p.img}
                   alt={p.name}
                   fill
+                  sizes="(max-width: 1200px) 100vw, 1200px"
                   className="object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80" />

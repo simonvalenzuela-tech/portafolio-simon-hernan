@@ -28,15 +28,15 @@ export default function FerreteriaBelgrano() {
       <header className="flex items-center justify-between px-6 md:px-16 py-6 bg-[#23262b] text-[#f2f1ed]">
         <div className="flex items-center gap-2">
           <Package size={18} className="text-[#e0a11c]" />
-          <span className="font-medium">Ferretería Belgrano — Panel</span>
+          <span className="font-medium">The Home Depot — Panel</span>
         </div>
         <span className="text-sm text-[#f2f1ed]/60">Gestión de catálogo y stock</span>
       </header>
 
       <div className="relative w-full aspect-[21/9] overflow-hidden">
         <Image
-          src="https://i.pinimg.com/1200x/4e/b1/0e/4eb10ef82520f10912f557066a3abebd.jpg"
-          alt="Ferretería Belgrano"
+          src="https://wallpapers.com/images/hd/home-depot-blue-sky-w7ecw0brgdbmprgx.jpg"
+          alt="The Home Depot"
           fill
           className="object-cover"
           priority
@@ -78,6 +78,7 @@ export default function FerreteriaBelgrano() {
                src={c.img || `https://picsum.photos/seed/${c.seed}/450/600`}
                alt={c.name}
                fill
+               sizes="(max-width: 1200px) 100vw, 1200px"
                className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -136,8 +137,8 @@ export default function FerreteriaBelgrano() {
       </section>
 
       <footer className="px-6 md:px-16 py-6 border-t border-[#dcdad2] text-sm text-[#8a8f96] flex justify-between">
-        <span>Ferretería Belgrano</span>
-        <span>Sitio de ejemplo — DevBridge</span>
+        <span>The Home Depot</span>
+        <span>Sitio de ejemplo — DevCraft Studio</span>
       </footer>
     </div>
   );

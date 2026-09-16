@@ -44,6 +44,7 @@ export default function BarberiaDelSur() {
           src="https://majbarber.com/wp-content/uploads/2023/01/majbarbercalle.jpg"
           alt="Barbería del Sur"
           fill
+          sizes="(max-width: 1200px) 100vw, 1200px"
           className="object-cover"
           priority
         />
