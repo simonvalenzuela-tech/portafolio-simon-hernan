@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { MessageCircle, Code2, ArrowUpRight, CheckCircle2, Sparkles, Zap } from "lucide-react";
 
-export default function PortafolioDevBridge() {
+export default function PortafolioDevCraft() {
   const proyectos = [
     {
       slug: "cafe",
@@ -11,7 +11,7 @@ export default function PortafolioDevBridge() {
       desc: "Cafetería con menú interactivo, ubicación en vivo y contacto directo por WhatsApp.",
       tone: "from-amber-500/20 via-orange-500/10 to-transparent",
       badgeColor: "border-amber-500/30 text-amber-400 bg-amber-500/10",
-      img: "https://www.balthazarbakery.com/soho/content/home/landing_banner_01.jpg",
+      img: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&h=560&q=75",
     },
     {
       slug: "indumentaria",
@@ -20,7 +20,7 @@ export default function PortafolioDevBridge() {
       desc: "Tienda de indumentaria con catálogo visual optimizado y pedidos rápidos por WhatsApp.",
       tone: "from-fuchsia-500/20 via-purple-500/10 to-transparent",
       badgeColor: "border-fuchsia-500/30 text-fuchsia-400 bg-fuchsia-500/10",
-      img: "https://ccviva.com/sites/default/files/2024-05/American_Eagle_Villavicencio.jpg",
+      img: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1000&h=560&q=75",
     },
     {
       slug: "barberia",
@@ -29,7 +29,7 @@ export default function PortafolioDevBridge() {
       desc: "Sistema interactivo para selección de servicios, horarios en vivo y confirmación ágil.",
       tone: "from-cyan-500/20 via-blue-500/10 to-transparent",
       badgeColor: "border-cyan-500/30 text-cyan-400 bg-cyan-500/10",
-      img: "https://i.pinimg.com/originals/d5/c2/dd/d5c2dd9d74b415e6c899f1fbf122d2b5.jpg",
+      img: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1000&h=560&q=75",
     },
     {
       slug: "ferreteria",
@@ -38,7 +38,25 @@ export default function PortafolioDevBridge() {
       desc: "Panel de inventario en tiempo real con alertas automáticas de reposición.",
       tone: "from-emerald-500/20 via-teal-500/10 to-transparent",
       badgeColor: "border-emerald-500/30 text-emerald-400 bg-emerald-500/10",
-      img: "https://d1xchyov513y0i.cloudfront.net/wp-content/uploads/2023/03/23162712/the-home-depot-PEMB-construction.jpg",
+      img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1000&h=560&q=75",
+    },
+     {
+      slug: "gimnasio",
+      name: "Fuerza Norte",
+      tag: "Planes y membresías",
+      desc: "Gimnasio con planes comparados y clases grupales con horarios.",
+      tone: "from-lime-500/20 via-lime-400/10 to-transparent",
+      badgeColor: "border-lime-500/30 text-lime-400 bg-lime-500/10",
+      img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&h=560&q=75",
+    },
+    {
+      slug: "restaurante",
+      name: "Smyth",
+      tag: "Carta de comida",
+      desc: "Parrilla con menú y fotos de cada plato.",
+      tone: "from-orange-500/20 via-red-500/10 to-transparent",
+      badgeColor: "border-orange-500/30 text-orange-400 bg-orange-500/10",
+      img: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1000&h=560&q=75",
     },
   ];
 
@@ -56,6 +74,12 @@ export default function PortafolioDevBridge() {
       skills: ["Python", "JavaScript", "Postgre SQL / My SQL / Supabase / Firebase", "Android Studio", "Node.js", "Docker"],
     },
   ];
+
+  // Abre el chat con la persona y deja escrito un mensaje para que solo tenga que enviarlo.
+  const linkWhatsApp = (persona: { name: string; whatsapp: string }) => {
+    const mensaje = `Hola ${persona.name.split(" ")[0]}! Vi el portafolio de DevCraft Studio y quería hacerte una consulta.`;
+    return `https://wa.me/${persona.whatsapp}?text=${encodeURIComponent(mensaje)}`;
+  };
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-violet-500 selection:text-white relative overflow-hidden">
@@ -236,7 +260,7 @@ export default function PortafolioDevBridge() {
               </div>
               
               <a
-                href={`https://wa.me/${persona.whatsapp}`}
+                href={linkWhatsApp(persona)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 px-6 py-4 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black rounded-2xl text-sm shadow-lg shadow-emerald-500/20 hover:scale-[1.02] transition-all duration-200"

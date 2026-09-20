@@ -1,7 +1,7 @@
-# DevBridge Córdoba — Portafolio
+# DevCraft Studio — Portafolio
 
-Proyecto Next.js + Tailwind con el portafolio y 4 sitios de ejemplo
-(cafetería, indumentaria, barbería, ferretería).
+Proyecto Next.js + Tailwind con el portafolio de DevCraft Studio y 6 sitios de
+ejemplo (cafetería, indumentaria, barbería, ferretería, gimnasio y restaurante).
 
 ## 1. Instalar dependencias
 
@@ -22,8 +22,12 @@ proyecto lleva a su sitio en /proyectos/cafe, /proyectos/indumentaria, etc.
 
 ## 3. Antes de publicarlo, cambiá:
 
-- El número de WhatsApp en `app/page.tsx` (buscá `wa.me/5493511234567`
-  y poné el número real, con código de país sin el +).
+- Los números de WhatsApp del equipo en `app/page.tsx` (array `equipo`, campo
+  `whatsapp`): código de país y número, sin el `+`.
+  Al tocar "Escribir a ...", se abre el chat con un mensaje ya escrito
+  (función `linkWhatsApp`, en el mismo archivo).
+- Los botones de los sitios de ejemplo (`app/proyectos/*`) son solo de
+  demostración: no envían mensajes a ningún número.
 - Nombres, textos y precios de cada proyecto de ejemplo si quieren
   personalizarlos más.
 
@@ -33,7 +37,7 @@ proyecto lleva a su sitio en /proyectos/cafe, /proyectos/indumentaria, etc.
 2. Subí esta carpeta a un repositorio de GitHub.
 3. En Vercel, hacé clic en "Add New Project", elegí el repositorio,
    dejá la configuración por defecto y hacé clic en "Deploy".
-4. En unos minutos te da una URL como `devbridge-cordoba.vercel.app`.
+4. En unos minutos te da una URL como `devcraft-studio.vercel.app`.
 
 Esa URL es la que van a poner detrás del QR de la tarjeta.
 
@@ -45,12 +49,15 @@ app/
   layout.tsx            → estructura general del sitio
   globals.css           → estilos base de Tailwind
   proyectos/
-    cafe/page.tsx        → ejemplo: cafetería
-    indumentaria/page.tsx → ejemplo: catálogo de ropa
-    barberia/page.tsx     → ejemplo: reserva de turnos
-    ferreteria/page.tsx   → ejemplo: panel de stock
+    cafe/page.tsx          → ejemplo: cafetería
+    indumentaria/page.tsx  → ejemplo: catálogo de ropa
+    barberia/page.tsx      → ejemplo: reserva de turnos
+    ferreteria/page.tsx    → ejemplo: panel de stock
+    gimnasio/page.tsx      → ejemplo: planes y clases
+    restaurante/page.tsx   → ejemplo: carta de comida
 ```
 
 Para agregar un proyecto nuevo más adelante: crear una carpeta dentro de
 `app/proyectos/nombre-del-proyecto` con un archivo `page.tsx`, y agregar
-la tarjeta correspondiente en `app/page.tsx`.
+la tarjeta correspondiente (con `slug`, `tone` y `badgeColor`) en el array
+`proyectos` de `app/page.tsx`.
