@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MessageCircle, Code2, ArrowUpRight, CheckCircle2, Sparkles, Zap } from "lucide-react";
+import { MessageCircle, Code2, ArrowUpRight, CheckCircle2, Sparkles, Zap, Mail } from "lucide-react";
+
+const EMAIL = "devcraftstudio67@gmail.com";
 
 export default function PortafolioDevCraft() {
   const proyectos = [
@@ -269,6 +271,29 @@ export default function PortafolioDevCraft() {
               </a>
             </div>
           ))}
+        </div>
+
+        <div className="mt-8 rounded-3xl border border-slate-800 bg-slate-900/90 p-8 flex flex-col sm:flex-row items-center justify-between gap-5 hover:border-violet-500/40 transition-all duration-300 shadow-xl">
+          <div className="flex items-center gap-4 text-center sm:text-left flex-col sm:flex-row">
+            <div className="w-12 h-12 rounded-2xl bg-violet-500/10 border border-violet-500/20 text-violet-400 flex items-center justify-center shrink-0">
+              <Mail size={22} />
+            </div>
+            <div>
+              <p className="text-sm font-medium text-slate-400">¿Preferís escribirnos por correo?</p>
+              <a
+                href={`mailto:${EMAIL}?subject=${encodeURIComponent("Consulta desde el portafolio de DevCraft Studio")}`}
+                className="text-lg sm:text-xl font-black text-white hover:text-violet-300 transition-colors break-all"
+              >
+                {EMAIL}
+              </a>
+            </div>
+          </div>
+          <a
+            href={`mailto:${EMAIL}?subject=${encodeURIComponent("Consulta desde el portafolio de DevCraft Studio")}`}
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-violet-500 hover:bg-violet-400 text-white font-bold text-sm transition-colors shrink-0"
+          >
+            <Mail size={17} /> Enviar correo
+          </a>
         </div>
       </section>
 
